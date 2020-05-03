@@ -25,10 +25,25 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. How would you describe preprocessing to someone new to CSS?
+
+A preprocessor for CSS is a program that will compile your CSS code so you can use easier to read syntax that allows nesting, mixins and inheritance selectors. The compiler will automatically take any code in the less file and push it to a master document. This makes it easier to organize multiple style sheets for complex websites. 
+
 2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is the ability to make mixins with parameters so you can easily add styles that are appearing multiple times within a style sheet. For example, making a mixin for the flex box parameters so when you are doing media queries you can quickly make your website fit on all sorts of sizes of devices.
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+Variables are how computers store data to be referenced and manipulated. They can also be used to label information with a name so code can be understood easier by other coders. Once a variable is declared it can be used throughout the code.
+
 4. What is the purpose of using functions in code?
+
+In computer programming a function is a procedure that will make the code do a certain task when it is called. You can use functions to build modular tasks for the computer to run.
+
 5. What is a JSON data?
+
+JSON stands for JavaScript Object Notation which is how you encode objects into your code with Javascript.  JSON data is useful when adding name/value pairs to arrays. A common use of JSON is to read data from a web server, and display the data in a web page.
+
 
 You may need to look up an answer but, you are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
