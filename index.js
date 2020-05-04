@@ -207,10 +207,12 @@ const artists = [{
 (1) Name of the first artist in the array
 (2) Bio of the third artist in the array */
 
+console.log(artists[0].name);
+console.log(artists[2].bio);
 
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
-name.splice(8, "Vincent Van Gogh")
+name.splice([8], "Vincent Van Gogh");
 console.log(name);
 
 
@@ -222,38 +224,48 @@ console.log(name);
  * For example, if getArtistByIndex is invoked with the inventory and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
  */
-function getArtistByIndex(id, name) {
-    return `The artist at index ${id} is ${name}.`;
-}
+function getArtistByIndex(artists, id) {
+    for (let i = 0; i < artists.length; i++) {}
+    if (id === artists[i].id) {
+        return console.log(`The artist at index ${artists[i].id} is ${artists[i].name}`);
+        /**
 
-/**
+
+        /* Task 4: Create a function called `removeArtist` that takes two arguments:
+         *     (1) artists array
+         *     (2) a number which is the desired index in the array.
+         * removeArtist removes an artist from the dat array at the index.
+         * 
+         * For example, if removeArtist is invoked with the data and the number 0,
+         * it will remove Amedeo Modigliani from our dataset.
+        */
+        function removeArtist(id, name) {
+            var index = id.indexOf(name);
+            if (index > -1) {
+                id.splice(index, 1);
+            }
+            return;
+        }
+
+        /**
 
 
-/* Task 4: Create a function called `removeArtist` that takes two arguments:
- *     (1) artists array
- *     (2) a number which is the desired index in the array.
- * removeArtist removes an artist from the dat array at the index.
- * 
- * For example, if removeArtist is invoked with the data and the number 0,
- * it will remove Amedeo Modigliani from our dataset.
-*/
-function removeArtist(id, name) {
-    var index = id.indexOf(name);
-    if (index > -1) {
-        id.splice(index, 1);
+        /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
+
+        function lotsOfArt(artists) {
+
+            var arr = [];
+
+            for (let i = 0; i < artists.length; i++) {
+
+                if (artists[i].paintings > 100) {}
+                arr.push(artists[i].name);
+            }
+
+        }
+        return console.log(arr);
     }
-    return;
-}
-
-/**
-
-
-/* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
-
-function lotsOfArt(id, paintings) {
-    for (var id = 0; id < 19; id++)
-        if (paintings > 100)
-            console.log(names)
+    lotsOfArt(artists);
 
 }
 
@@ -262,8 +274,17 @@ function lotsOfArt(id, paintings) {
 
 
 
-function addArtist() {
-    artists.push(id: 21; name: "Daniel Beggs"; years: "1993 - 2020"; genre: "Music and Web Design,"; nationality: "Irish"; bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", )
+function addArtist(newartist) {
+    artists.push(newartist)
+}
+addArtist({
+    'id': 21,
+    'name': "Daniel Beggs",
+    'years': "1993 - 2020",
+    'genre': "Music and Web Design,",
+    'nationality': "Irish",
+    'bio': "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+})
 
 }
 

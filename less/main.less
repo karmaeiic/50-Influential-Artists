@@ -1,47 +1,87 @@
-.title-container{
-    .displayflex();
-    position: relative;
-    text-align: center;
-    color: white;
+html {
+    font-size: 62.5%;
+}
+.title-container {
+    margin: 2%;
+    
+    div {
+        position: absolute;
+        width: 500px;
+        margin: 22% 0% 0% 14%;
 
-.banner{
-    .displayflex();
-    margin: 3%;
-    width: auto;
-    height: 70%;
-}
-.imageholder .websitename{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 70px;
-    font-weight: bold;
-}
-.contactbutton{
-    .displayflex();
-    position: absolute;
-    bottom: 8px;
-    top: 50%;
-    left: 50%;
 
+
+        h1{
+            color: white;
+            font-size: 6rem;
+            font-weight: 800;
+            font-family: Arial, Helvetica, sans-serif;
+            word-wrap: normal;
+            text-align: center;
+        }
+        .button {
+            .main-btn(white, @main-color, 2rem);
+            padding: 1% 5%;
+            border-radius: 5px;
+            margin-left: 35%;
+        }
+        
+    }
+
+    img {
+        width: 800px;
+        height: auto;
+        object-fit: none;
+    }
+
+    img:hover{
+        opacity: 100%;
+    }
 }
+
+img:hover{
+    opacity: 80%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2% 8%;
+    color: @main-color;
+}
+
+img{
+    width: 300px;
+    height: 250px;
 }
 
 .artists-container {
     .displayflex();
+    justify-content: space-around;
+    align-content: center;
+    border-top: 2px solid grey;
     text-align: center;
-    margin: 50px;
-    flex-direction: row;
 
-.artist {
-    .displayflex();
-    width 100px;
-    height 100px;
-    margin: 30px;
+    .artist {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding:4%;
+        width: auto;
 
+        .artist-name{
+            text-decoration: none;
+            font-size: 2rem;
+            padding: 1%;
+            color: black;
+        
+        }
+    .bio {
+        font-size: 1.8rem;
+        }
+    }
+    
 }
-
-}
-
