@@ -3,6 +3,20 @@
   justify-self: center;
   text-align: center;
 }
+.buttonstyle {
+  box-shadow: 0px 10px 14px -7px #276873;
+  background-color: #599bb3;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 13px 32px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a;
+}
 html,
 body,
 div,
@@ -119,41 +133,124 @@ video {
   background: url(img/hover.png) repeat-x #147bba;
   color: #fff;
 }
+img:hover {
+  opacity: 80%;
+}
 .title-container {
   display: flex;
-  justify-self: center;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 3rem 0 0 0;
+}
+.title-container .banner {
+  display: flex;
+  justify-content: center;
   position: relative;
   text-align: center;
   color: white;
 }
-.title-container .banner {
-  display: flex;
-  justify-self: center;
-  text-align: center;
-  margin: 3%;
-  width: auto;
-  height: 70%;
-}
-.title-container .imageholder .websitename {
+.title-container .banner .websitename {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  font-size: 70px;
+  width: 20%;
+}
+.title-container .banner .websitename button {
+  box-shadow: 0px 10px 14px -7px #276873;
+  background-color: #599bb3;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
   font-weight: bold;
+  padding: 13px 32px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a;
+  padding: 1% 5%;
+  border-radius: 5px;
+  margin-left: 35%;
 }
-.title-container .contactbutton {
-  display: flex;
-  justify-self: center;
-  text-align: center;
-  position: absolute;
-  bottom: 8px;
-  top: 50%;
-  left: 50%;
+.title-container .banner .websitename .myButton:hover {
+  background-color: #408c99;
 }
-.artists-containter {
+.title-container .banner .websitename .myButton:active {
+  position: relative;
+  top: 1px;
+}
+.title-container hr {
+  border: 1px solid #bdbdbd;
+  width: 45%;
+}
+.artists-container {
   display: flex;
-  justify-self: center;
-  text-align: center;
+  height: 105%;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+.artists-container .artist {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  align-content: center;
+}
+.artists-container .artist .artist1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-right: 30%;
+  width: 30%;
+  padding: 2rem 0 0 0;
+  color: #242424;
+}
+.artists-container .artist .artist1 .bio {
+  width: 20rem;
+  padding: 1rem 0 0 0;
+  color: #242424;
+}
+.artists-container .artist .artist1 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0 0 0;
+  font-size: 120%;
+  text-decoration: none;
+  color: #242424;
+}
+.artists-container .artist .artist1 img {
+  width: 90%;
+  border-radius: 10px;
+}
+.artists-container .artist .artist2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 35%;
+  padding: 2rem 0 0 0;
+}
+.artists-container .artist .artist2 .bio {
+  width: 20rem;
+  color: #242424;
+  padding: 1rem 0 0 0;
+}
+.artists-container .artist .artist2 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0 0 0;
+  font-size: 110%;
+  text-decoration: none;
+  color: #242424;
+}
+.artists-container .artist .artist2 img {
+  width: 70%;
+  border-radius: 10px;
 }

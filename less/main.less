@@ -1,87 +1,129 @@
-html {
-    font-size: 62.5%;
+img:hover{
+    opacity: 80%;
+  
 }
-.title-container {
-    margin: 2%;
-    
-    div {
-        position: absolute;
-        width: 500px;
-        margin: 22% 0% 0% 14%;
 
+.title-container{
+display: flex;
+flex-direction:column;
+justify-content:center;
+align-content:center;
+align-items:center;
+padding: 3rem 0 0 0;
+.banner{
+    display:flex;
+    justify-content:center;
+    position: relative;
+    text-align: center;
+    color: white;
 
-
-        h1{
-            color: white;
-            font-size: 6rem;
-            font-weight: 800;
-            font-family: Arial, Helvetica, sans-serif;
-            word-wrap: normal;
-            text-align: center;
-        }
-        .button {
-            .main-btn(white, @main-color, 2rem);
+    .websitename {
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20%;
+        
+      
+        button {
+            .buttonstyle();
             padding: 1% 5%;
             border-radius: 5px;
             margin-left: 35%;
         }
-        
-    }
-
-    img {
-        width: 800px;
-        height: auto;
-        object-fit: none;
-    }
-
-    img:hover{
-        opacity: 100%;
-    }
-}
-
-img:hover{
-    opacity: 80%;
-}
-
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 2% 8%;
-    color: @main-color;
-}
-
-img{
-    width: 300px;
-    height: 250px;
-}
-
-.artists-container {
-    .displayflex();
-    justify-content: space-around;
-    align-content: center;
-    border-top: 2px solid grey;
-    text-align: center;
-
-    .artist {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        padding:4%;
-        width: auto;
-
-        .artist-name{
-            text-decoration: none;
-            font-size: 2rem;
-            padding: 1%;
-            color: black;
-        
+        .myButton:hover {
+            background-color:#408c99;
         }
-    .bio {
-        font-size: 1.8rem;
+        .myButton:active {
+            position:relative;
+            top:1px;
+        }
+
+    }
+
+}
+hr{
+    border: 1px solid rgb(189, 189, 189);
+    width:45%;
+}
+}
+
+.artists-container{
+    display:flex;
+    height:105%;
+    width:100%;
+    flex-direction:row;
+    justify-content:center;
+    align-content:center;
+    .artist{
+        display:flex;
+        justify-content:center;
+        width:40%;
+        align-content:center;
+     
+     
+        .artist1{  
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            align-content: center;
+            margin-right:30%;    
+            width:30%; 
+            padding: 2rem 0 0 0;
+            color:rgb(36, 36, 36);
+
+
+            .bio{
+                width: 20rem;
+                padding: 1rem 0 0 0;
+                color:rgb(36, 36, 36);
+
+            }
+            a{
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                padding: 1rem 0 0 0;
+                
+                font-size:120%;
+                text-decoration: none;
+                color:rgb(36, 36, 36);
+            }     
+            img{ 
+                width:90%;
+                border-radius:10px;
+            
+            }
+        }
+        .artist2{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            align-content: center;
+            width:35%; 
+            padding: 2rem 0 0 0;
+
+
+            .bio{
+                width: 20rem;
+                color:rgb(36, 36, 36);
+                padding: 1rem 0 0 0;
+
+            }
+            a{
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                padding: 1rem 0 0 0;
+                
+                font-size:110%;
+                text-decoration: none;
+                color:rgb(36, 36, 36);
+            }    
+            img{
+                width:70%;
+                border-radius:10px;
+            }
         }
     }
-    
-}
+    }
