@@ -250,24 +250,20 @@ function removeArtist(id, name) {
 
 /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
-function lotsOfArt(name) {
-    if
+function lotsOfArt(id, paintings) {
+    for (var id = 0; id < 19; id++)
+        if (paintings > 100)
+            console.log(names)
 
 }
 
 
-/* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
+/* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨 */
 
-id: 21
-name: Your Name Here, 
-years: Your Birth Year - current day,
-genre: Web Design, 
-nationality: Your Nationality Here
-bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist( /* Code here */ ) {
 
-    /* Code here */
+function addArtist() {
+    artists.push(id: 21; name: "Daniel Beggs"; years: "1993 - 2020"; genre: "Music and Web Design,"; nationality: "Irish"; bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", )
 
 }
 
